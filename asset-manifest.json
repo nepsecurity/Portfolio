@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/nepsecurity.github.io/static/css/main.bf538fe7.css",
-    "main.js": "/nepsecurity.github.io/static/js/main.391e75ad.js",
-    "static/media/HeroImage.jpg": "/nepsecurity.github.io/static/media/HeroImage.c4ab5217d1bb50bc3521.jpg",
-    "index.html": "/nepsecurity.github.io/index.html",
-    "main.bf538fe7.css.map": "/nepsecurity.github.io/static/css/main.bf538fe7.css.map",
-    "main.391e75ad.js.map": "/nepsecurity.github.io/static/js/main.391e75ad.js.map"
+    "main.css": "/static/css/main.bf538fe7.css",
+    "main.js": "/static/js/main.d15fd6c9.js",
+    "static/media/HeroImage.jpg": "/static/media/HeroImage.c4ab5217d1bb50bc3521.jpg",
+    "index.html": "/index.html",
+    "main.bf538fe7.css.map": "/static/css/main.bf538fe7.css.map",
+    "main.d15fd6c9.js.map": "/static/js/main.d15fd6c9.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.391e75ad.js"
+    "static/js/main.d15fd6c9.js"
   ]
 }
