@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { skills } from '../../data/constants'
 
+// import test from '../../logos/yorklogo.jpg'
+
 const Container = styled.div`
 display: flex;
 flex-direction: column;
@@ -133,7 +135,8 @@ const Skills = () => {
               <SkillList>
                 {skill.skills.map((item) => (
                   <SkillItem>
-                    <SkillImage src={item.image}/>
+                    <SkillImage src={ process.env.PUBLIC_URL + item.image}/>
+                    {/* <SkillImage src={test}/> */}
                     {item.name}
                   </SkillItem>
                 ))}

@@ -1,13 +1,9 @@
 export const Bio = {
   name: "Sirjan Pun Magar",
-  roles: [
-    "Test",
-  ],
-  description:
-    "I am bla bla shit",
+  roles: ["Test"],
+  description: "I am bla bla shit",
   github: "GithubLink",
-  resume:
-    "Resume",
+  resume: "Resume",
   linkedin: "LinkedIn",
   twitter: "Twitter",
   insta: "Insta",
@@ -20,11 +16,10 @@ export const skills = [
     skills: [
       {
         name: "Pen",
-        image:
-          "",
-      }
+        image: "/logos/yorklogo.jpg",
+      },
     ],
-  }
+  },
 ];
 
 export const experiences = [
@@ -35,17 +30,15 @@ export const experiences = [
     company: "CompanyName",
     date: "Datetime",
     desc: "Job Desc",
-    skills: [
-      "SkillsName",
-    ],
+    skills: ["SkillsName"],
     doc: "Docs",
-  }
+  },
 ];
 
 export const education = [
   {
     id: 0,
-    img: "Logo of the institute.",
+    img: "/logos/yorklogo.jpg",
     school: "York University, North York Canada",
     date: "Start date and end date of the study.",
     grade: "Currently studying.",
@@ -54,7 +47,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "Logo of the institute",
+    img: "/logos/yorklogo.jpg",
     school: "York University, North york Uni",
     date: "Start date and end date",
     grade: "Percentage",
@@ -63,7 +56,7 @@ export const education = [
   },
   {
     id: 2,
-    img: "Logo",
+    img: "/logo192.png",
     school: "SchoolName",
     date: "Start date and end date",
     grade: "Percentage",
@@ -75,21 +68,15 @@ export const education = [
 export const projects = [
   {
     id: 9,
-    title: "Trackify",
+    title: "test",
     date: "Jun 2023 - Jul 2023",
-    description:
-      "Desc",
-    image:
-      "",
-    tags: [
-      "Pen",
-    ],
+    description: "Desc",
+    image: "",
+    tags: ["Pen"],
     category: "Test",
     github: "",
     webapp: "",
   },
 ];
 
-export const TimeLineData = [
-  { year: 2024, text: "Started my journey" },
-];
+export const TimeLineData = [{ year: 2024, text: "Started my journey" }];

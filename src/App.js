@@ -1,22 +1,22 @@
-
-import './App.css';
-import styled, { ThemeProvider } from 'styled-components';
-import { darkTheme } from './utils/Themes';
+import "./App.css";
+import styled, { ThemeProvider } from "styled-components";
+import { darkTheme } from "./utils/Themes";
 //import {lightTheme} from './utils/Themes';
-import Navbar from './Components/Navbar';
-import Skills from './Components/Skills';
-import Hero from './Components/HeroSection';
-import Education from './Components/Education';
-import {BrowserRouter as Router} from 'react-router-dom';
-import { TabTitle } from './utils/generalFunctions';
-
+import Navbar from "./Components/Navbar";
+import Skills from "./Components/Skills";
+import Hero from "./Components/HeroSection";
+import Education from "./Components/Education";
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
+import { TabTitle } from "./utils/generalFunctions";
+import Footer from "./Components/Footer";
+import Blog from "./Pages/Blog";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
   height: 100%
   overflow-x: hidden;
-`
+`;
 const Wrapper = styled.div`
 background: linear-gradient (
   38.73deg,
@@ -35,26 +35,26 @@ clip-path: ploygon(0 0,100%,0,100% 100%,30% 98%,0 100%);
 function App() {
   TabTitle("Portfolio");
   return (
-  
-    <ThemeProvider theme = {darkTheme}>
-
+    <ThemeProvider theme={darkTheme}>
       <Router>
         <Navbar />
-          <Body>
-    
-            <Hero />
-    
-              <Wrapper>
+        <Body>
+          <Hero />
 
-              <Skills/>
-    
-              <Education />
+          <Wrapper>
+            <Skills />
+
+            <Education />
+            {/* <Routes>
+              <Route path="/blog" element={<Blog />}></Route>
+            </Routes> */}
+            <Blog />
           </Wrapper>
+          <Footer />
         </Body>
       </Router>
     </ThemeProvider>
   );
 }
 
-//export default {App, Example};
 export default App;

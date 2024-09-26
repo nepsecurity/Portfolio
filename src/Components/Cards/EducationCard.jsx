@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
 const Document = styled.img`
-    display: none;
+
     height: 70px;
     width: fit-content;
     background-color: #000;
@@ -75,7 +76,7 @@ const Top = styled.div`
 
 const Image = styled.img`
     height: 50px;
-    background-color: #000;
+    background-color: #333;
     border-radius: 10px;
     margin-top: 4px;
     @media only screen and (max-width: 768px){
@@ -114,7 +115,7 @@ const Date = styled.div`
     color: ${({ theme }) => theme.text_secondary + 80};
     @media only screen and (max-width: 768px){
         font-size: 10px;
-    }
+    }TimelineConnector
 `
 
 const Grade = styled.div`
@@ -132,7 +133,7 @@ const EducationCard = ({ education }) => {
     return (
         <Card>
             <Top>
-                <Image src={education.img} />
+                <Image src={process.env.PUBLIC_URL + education.img} alt={education.school}/>
                 <Body>
                     <Name>{education.school}</Name>
                     <Degree>{education.degree}</Degree>
@@ -147,4 +148,4 @@ const EducationCard = ({ education }) => {
     )
 }
 
-export default EducationCard
+export default EducationCard;
